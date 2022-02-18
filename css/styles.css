@@ -93,6 +93,11 @@ color: var(--accent-text)
 .nav-link:focus {
   color: var(--accent-text);
 }
+
+.logo {
+  margin-right: 93px;
+}
+
 .color-web {
   font-family: Raleway;
   font-weight: bold;
@@ -114,7 +119,7 @@ color: var(--accent-text)
 
 .contacts-list {
 display: flex;
-margin-left: auto;
+/* margin-left: auto; */
 }
 
 .contacts-item {
@@ -144,8 +149,6 @@ margin-left: auto;
 .hero-title {
   padding-top: 200px;
   margin-bottom: 30px;
-  padding-right: 452px;
-  padding-left: 452px;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -185,7 +188,11 @@ margin-left: auto;
 /* особенности */
 .features-list {
   display: flex;
+  margin-bottom: 94px;
 } 
+
+.features-item {
+  )}
 
 .features-title-item {
   font-family: Roboto;
@@ -196,6 +203,15 @@ margin-left: auto;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+
+.work-list-item {
+  display: block;
+  margin-right: 30px;
+ }
+
+ .work-list-item:not(:last-child) {
+   margin: 0px;
+ }
 
 .features-about {
   font-family: Roboto;
@@ -208,6 +224,8 @@ margin-left: auto;
 
 .work-list {
   display: flex;
+  
+  margin-bottom: 94px;
 }
 
 .title {
@@ -226,6 +244,10 @@ margin-left: auto;
 
 .team-list {
   display: flex;
+}
+
+>.team-card {
+  background-color: --primary-light-bg;
 }
 
 .team-member {
