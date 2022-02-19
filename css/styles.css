@@ -12,6 +12,7 @@
   --secondary-light-bg: #F5F4FA;
   --primary-dark-bg: #2f303a;
   --header-line: #ECECEC;
+  --card-border:#EEEEEE;
 }
 
 body {
@@ -55,6 +56,7 @@ h1, h2, h3, {
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid  var(--header-line);
 }
 
 .navigation {
@@ -162,6 +164,8 @@ display: flex;
 
 .hero-title {
   padding-top: 200px;
+  padding-right: 452px;
+  padding-left: 452px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-family: Roboto;
@@ -179,6 +183,7 @@ display: flex;
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
+  margin-bottom: 210px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -293,12 +298,21 @@ display: flex;
   display: flex;
 }
 
-.team-list>.team-card {
-  padding-bottom: 94px;
+.team-card {
+  margin-bottom: 30px;
+  margin-left: 30px;
   background-color: --primary-light-bg;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+  /* padding-bottom: 94px; */
+}
+
+.card-member {
+  
 }
 
 .team-member {
+  margin-bottom: 10px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -363,24 +377,41 @@ display: flex;
 /* Portfolio */
 
 .menue {
-background-color: var(--primary-light-bg);
+  display: flex;
+  background-color: var(--primary-light-bg);
 }
 
-.manue-item {
+.filters {
+align-items:  center;
+}
+
+.menue-list {
   display: flex;
+  text-align: center;
   align-items: center;
 }
 
+.manue-item {
+ align-items: center;
+ padding-bottom: 34px;
+}
+
+.frst-btn {
+  min-width: 73px;
+}
+
 .menue-btn {
+  display: block;
+  margin-left: 8px;
   background-color: var(--secondary-light-bg);
   color: var(--secondary-text-color);
-  border-radius: 4px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border-style: none;
 }
 
 .menue-btn:hover,
@@ -389,14 +420,29 @@ background-color: var(--primary-light-bg);
   color: var(--secondary-lite-txt);
   cursor: pointer;
 }
-  .image {
+
+.image {
   display: block;
-  background-color: var(--primary-light-bg);
-  border: 1px solid #EEEEEE;
-  box-sizing: border-box;
+  width: 370;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
   
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  text-align: left;
+  margin-left: 30px;
+  background-color: var(--primary-light-bg);
+  border: 1px solid var(--card-border);
+  box-sizing: border-box;
+}
+
 .project-name {
+  margin-bottom: 4px;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
@@ -406,6 +452,7 @@ background-color: var(--primary-light-bg);
 }
 
 .project-type {
+  margin-top: 20px;
   font-family: Roboto;
   font-weight: normal;
   font-size: 16px;
