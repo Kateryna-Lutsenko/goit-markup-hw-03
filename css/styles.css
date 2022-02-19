@@ -26,7 +26,7 @@ body {
 
 
 .container {
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -78,7 +78,6 @@ h1, h2, h3, {
 .nav-list {
   display: flex;
   margin-right: 93px;
-  
 }
 
 .nav-item>.current {
@@ -105,7 +104,6 @@ color: var(--accent-text)
 .nav-link:focus {
   color: var(--accent-text);
 }
-
 
 
 .color-web {
@@ -204,7 +202,10 @@ display: flex;
 
 .features {
   align-items: center;
-  justify-content: space-around;
+
+}
+.features-cont {
+  justify-content: center;
 }
 
 .features-list {
@@ -212,17 +213,20 @@ display: flex;
   align-items: center;
   padding-bottom: 94px;
   margin-left: 0px;
+ 
 } 
 
 .features-item {
+ 
   align-items: center;
 }
 
 .features-item +.features-item  {
-  margin: 0px;
+  margin-left: 30px;
 }
 
 .features-title-item {
+  margin-top: 94px;
   margin-bottom: 10px;
   font-family: Roboto;
   font-weight: bold;
@@ -255,7 +259,7 @@ display: flex;
   margin-right: 30px;
  }
 
- .work-list-item:not(:last-child) {
+ .work-list-item:(last-child) {
    padding-right: 0px;
  }
 
@@ -265,6 +269,7 @@ display: flex;
 
 .work-list {
   display: flex;
+  flex-basis: calc(100%-90)/3;
   margin-bottom: 94px;
 }
 
@@ -283,7 +288,6 @@ display: flex;
 
 .team {
   display: flex;
-
   align-items: center;
   background: var(--secondary-light-bg);
   height: 648px;
@@ -301,14 +305,13 @@ display: flex;
 .team-card {
   margin-bottom: 30px;
   margin-left: 30px;
-  background-color: --primary-light-bg;
+  background-color: var(--primary-light-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-  /* padding-bottom: 94px; */
 }
 
-.card-member {
-  
+.team-card:not(first-child) {
+  margin-left: 30px;
 }
 
 .team-member {
@@ -340,6 +343,8 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .logo-footer {
+  display: block;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -377,32 +382,44 @@ border-radius: 0px 0px 4px 4px;
 /* Portfolio */
 
 .menue {
-  display: flex;
-  background-color: var(--primary-light-bg);
-}
 
-.filters {
-align-items:  center;
+  background-color: var(--primary-light-bg);
 }
 
 .menue-list {
   display: flex;
-  text-align: center;
+  padding-top: 94px;
+  justify-content: center;
   align-items: center;
 }
 
 .manue-item {
- align-items: center;
- padding-bottom: 34px;
+  display: flex;
+  padding-bottom: 34px;
 }
 
 .frst-btn {
   min-width: 73px;
 }
 
+.scnd-btn {
+  min-width: 128px;
+}
+.thrd-btn {
+  min-width: 145px;
+}
+.frth-btn {
+  min-width: 103px;
+}
+
+.fth-btn {
+  min-width: 130px;
+}
+
 .menue-btn {
   display: block;
   margin-left: 8px;
+  margin-bottom: 50px;
   background-color: var(--secondary-light-bg);
   color: var(--secondary-text-color);
   font-family: Roboto;
@@ -431,6 +448,7 @@ align-items:  center;
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc(100%-240)/9;
 }
 
 .project-item {
