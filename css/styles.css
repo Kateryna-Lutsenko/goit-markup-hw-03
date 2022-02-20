@@ -221,7 +221,6 @@ color: var(--accent-text)
 .features-list {
   display: flex;
   list-style: none;
-  align-items: center;
   padding-bottom: 94px;
   margin: 0;
   padding: 0;
