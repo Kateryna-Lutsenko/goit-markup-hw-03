@@ -162,13 +162,15 @@ color: var(--accent-text)
 
 
 .hero {
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   text-align:center;
   background: var(--primary-dark-bg);
 }
 
 .hero-title {
   text-align: center;
-  padding-top: 200px;
   margin-top: 0px;
   margin-bottom: 30px;
   color: var(--secondary-lite-txt);
@@ -187,7 +189,7 @@ color: var(--accent-text)
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  margin-bottom: 210px;
+  margin-bottom: 0px;
 
   font-family: Roboto;
   font-weight: 700;
@@ -208,7 +210,8 @@ color: var(--accent-text)
 }
 
 .features {
-  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-cont {
@@ -235,8 +238,9 @@ color: var(--accent-text)
 }
 
 .features-title-item {
-  margin-top: 94px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
@@ -247,7 +251,8 @@ color: var(--accent-text)
 }
 
 .features-about {
-  margin-right: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
@@ -257,6 +262,7 @@ color: var(--accent-text)
 }
 
 .work {
+  padding-bottom: 94px;
   display: flex;
   text-align:justify
 }
@@ -271,9 +277,6 @@ color: var(--accent-text)
 .work-list-item:last-child {
   margin-right: 0px;
 }
- /* .work-list-item:(:first-child) {
-  padding-left: 0px;
-} */
 
 .work-list {
   display: flex;
@@ -295,6 +298,8 @@ color: var(--accent-text)
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   align-items: center;
   background: var(--secondary-light-bg);
